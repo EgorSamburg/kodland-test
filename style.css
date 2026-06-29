@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+}
+
+.header {
+
+    position:absolute;
+    width:100%;
+    padding:25px 0;
+    z-index:10;
+
+}
+
+.header__inner {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo {
+
+    font-weight:bold;
+    font-size:18px;
+
+}
+
+.nav {
+
+    display:flex;
+    gap:55px;
+
+}
+
+.nav__link {
+    text-decoration:none;
+    color:black;
+    font-size:16px;
+
+}
+
+.hero {
+    height:60vh;
+    background:#ffbd68;
+
+}
+
+.hero__inner {
+
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hero__content {
+    width:50%;
+
+}
+
+.hero__title {
+    font-size:90px;
+    color:white;
+    margin:0 0 20px;
+
+}
+
+.hero__text {
+    font-size:22px;
+    color:white;
+    font-weight:bold;
+    max-width:450px;
+
+}
+
+.button {
+
+    margin-top:25px;
+    border:none;
+    background:#d5f3f0;
+    padding:16px 70px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.hero__image img {
+    width:430px;
+
+}
+
+.products {
+    height:33vh;
+    background:#c9eeee;
+    padding:25px 0;
+
+}
+
+.products__title {
+    text-align:center;
+    margin:0 0 20px;
+    font-size:28px;
+
+}
+
+.products__list {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:120px;
+}
+
+.product {
+
+    text-align:center;
+}
+
+.product__image {
+
+    height:120px;
+}
+
+.product__name {
+
+    margin:8px 0;
+    font-size:16px;
+}
+
+.button--small {
+
+    margin:0;
+    padding:10px 35px;
+    background:#ffbd68;
+}
+
+.footer {
+
+    height:7vh;
+    background:#333;
+    color:white;
+}
+
+.footer__inner {
+
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.footer__link {
+
+    color:white;
+    text-decoration:none;
+}
+
+@media(max-width:900px){
+
+body {
+    overflow:auto;
+}
+
+.hero {
+    height:auto;
+    padding-top:100px;
+}
+
+.hero__inner {
+    flex-direction:column;
+}
+
+.products {
+    height:auto;
+}
+
+.products__list {
+    flex-direction:column;
+    gap:30px;
+}
+
+.footer {
+    height:auto;
+}
+}
